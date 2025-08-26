@@ -6,40 +6,56 @@
 //            -----  📝📝 --
 
 // #include <stdio.h>
-// int main(){
-//     printf("Size of  int %d\n" ,sizeof(int));
-//     printf("Size of float %d\n" , sizeof(float));
-//     printf("Size of char %d\n" , sizeof(char));
+// float main(){
+//     prfloatf("Size of  float %d\n" ,sizeof(float));
+//     prfloatf("Size of float %d\n" , sizeof(float));
+//     prfloatf("Size of char %d\n" , sizeof(char));
 
 //     return  0;
 // }
 
 //   -----  📝📝   malloc --
 
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(){
+//     int *ptr ;
+//     ptr = (float *) malloc(5* sizeof(int));
+//     ptr[0] = 12;
+//     ptr[1] = 3;
+//     ptr[2] = 13;
+//     ptr[3] = 20;
+//     ptr[4] = 1;
+//     for(int i = 0 ; i<=5; i++){
+//         prfloatf("%d\n" , ptr[i]);
+//     }
+//     return 0;
+// }
+
+
+// /   -----  📝📝   calloc --
+
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(){
-    int *ptr ;
-    ptr = (int *) malloc(5* sizeof(int));
-    ptr[0] = 12;
-    ptr[1] = 3;
-    ptr[2] = 13;
-    ptr[3] = 20;
-    ptr[4] = 1;
-    for(int i = 0 ; i<=5; i++){
-        printf("%d\n" , ptr[i]);
-    }
+    float *ptr;
+ptr = (float * ) calloc(5,sizeof(float));
+for (int i = 0; i <=5; i++)
+{
+    printf("%f\n" , ptr[i]);
+}
+
     return 0;
 }
 
 
-
-
 // #include <stdio.h>
 // #include <stdlib.h>
-// int main(){
+// float main(){
 //     return 0;
 // }
+
 
 
 
