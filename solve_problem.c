@@ -58,38 +58,103 @@
 // 👉👉 🔹🔹 Question  4️⃣   Allocated  memory for 5  numbers  then dynamically  increase it  to 8 numbers
 
 
+// #include <stdio.h>
+// #include <stdlib.h>
+// float main(){
+//     int *ptr;
+//     ptr = (int *) calloc(5, sizeof(int));
+
+//     printf("Enter 5 Numbers");
+//     for (int i = 0; i <5; i++)
+//     {
+//         scanf("%d" , &ptr[i]);
+        
+//     }
+
+//     ptr =   realloc(ptr ,8); 
+//     printf("Enter 8  Numbers : ");
+//     for(int i = 0 ; i< 8 ; i++){
+//         scanf("%d" , &ptr[i]);
+//     } 
+    
+//     // print
+//     for (int i = 0; i < 8; i++)
+//     {
+//        printf("Number %d ,is  %d\n" , i , ptr[i]);
+//     }
+    
+//     return 0;
+// }
+
+// 👉👉  🔹🔹  Question  5️⃣   create an array  of size  (using calloc ) & enter  its value  from the user 
+    
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// int  main(){
+//     int *ptr;
+//     ptr = (int *) calloc(5, sizeof(int));
+
+//     printf("Enter 5 Numbers");
+//     for (int i = 0; i <5; i++)
+//     {
+//         scanf("%d" , &ptr[i]);
+        
+//     }
+
+   
+    
+//     // print
+//     for (int i = 0; i < 5; i++)
+//     {
+//        printf("Number %d ,is  %d\n" , i , ptr[i]);
+//     }
+    
+//     return 0;
+// }
+
+
+
+// 👉👉  🔹🔹  Question 6️⃣  Allocate  memory to  store  forst   5 odd  numbers 
+// , then  reallocate  it to store  first 6 even numbers
+
 #include <stdio.h>
 #include <stdlib.h>
-float main(){
-    int *ptr;
-    ptr = (int *) calloc(5, sizeof(int));
-
-    printf("Enter 5 Numbers");
-    for (int i = 0; i <5; i++)
+int main(){
+    int *ptr ;
+    ptr = (int *)  calloc(5 , sizeof(int));
+    ptr[0] = 1;
+    ptr[1] = 3;
+    ptr[2] = 5;
+    ptr[3] = 7;
+    ptr[4] = 9;
+    for (int i = 0; i < 5; i++)
     {
-        scanf("%d" , &ptr[i]);
-        
+       printf("Odd number is : %d\n" , ptr[i]);
     }
 
-    ptr =   realloc(ptr ,8); 
-    printf("Enter 8  Numbers : ");
-    for(int i = 0 ; i< 8 ; i++){
-        scanf("%d" , &ptr[i]);
-    } 
-    
-    // print
-    for (int i = 0; i < 8; i++)
-    {
-       printf("Number %d ,is  %d\n" , i , ptr[i]);
+   ptr = realloc(ptr , 6 );
+    ptr[0] = 2;
+    ptr[1] = 4;
+    ptr[2] = 6;
+    ptr[3] = 8;
+    ptr[4] = 10;
+    ptr[5] = 12;
+    for(int i = 0 ; i<6 ; i++){
+   printf("Even number is : %d\n " , ptr[i] );
     }
+
+//  free(ptr);
     
     return 0;
 }
 
-      
+
+
+
 // #include <stdio.h>
 // #include <stdlib.h>
-// float main(){
+// int main(){
 //     return 0;
 // }
 
