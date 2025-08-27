@@ -6,47 +6,47 @@
 // 👉👉  🔹🔹  Question  1️⃣  WAP to allocate memory to store  5 prices
 
 
-// #include <stdio.h>
-// #include <stdlib.h>
-// int main(){
-//     float *ptr;
-//     ptr = (float * ) malloc(5* sizeof(float));
-//     ptr[0] = 10;
-//     ptr[1] = 2;
-//     ptr[2] = 3;
-//     ptr[3] = 41;
-//     ptr[4] = 21;
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    float *ptr;
+    ptr = (float * ) malloc(5* sizeof(float));
+    ptr[0] = 10;
+    ptr[1] = 2;
+    ptr[2] = 3;
+    ptr[3] = 41;
+    ptr[4] = 21;
 
-//        for (int i = 0; i <=5; i++)
-//        {
-//         printf("%f\n" , ptr[i]);
-//        }
+       for (int i = 0; i <=5; i++)
+       {
+        printf("%f\n" , ptr[i]);
+       }
        
-//     return 0;
-// }
+    return 0;
+}
 
 // 👉👉  🔹🔹  Question  2️⃣ WAP to allocate memory  of size n , where entered by the user 
 
 
-// #include <stdio.h>
-// #include <stdlib.h>
-// float main(){
-//   int   *ptr ;
-//   int n;
-//   printf("Enter n  : ");
-//    scanf("%d" , &n);
+#include <stdio.h>
+#include <stdlib.h>
+float main(){
+  int   *ptr ;
+  int n;
+  printf("Enter n  : ");
+   scanf("%d" , &n);
 
-//    ptr = (int *) calloc(n , sizeof(int));
+   ptr = (int *) calloc(n , sizeof(int));
 
-//    for (int  i = 0; i <n; i++)
-//    {
-//    printf("%d\n" , ptr[i]);
-//    }
+   for (int  i = 0; i <n; i++)
+   {
+   printf("%d\n" , ptr[i]);
+   }
    
 
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 
@@ -58,60 +58,60 @@
 // 👉👉 🔹🔹 Question  4️⃣   Allocated  memory for 5  numbers  then dynamically  increase it  to 8 numbers
 
 
-// #include <stdio.h>
-// #include <stdlib.h>
-// float main(){
-//     int *ptr;
-//     ptr = (int *) calloc(5, sizeof(int));
+#include <stdio.h>
+#include <stdlib.h>
+float main(){
+    int *ptr;
+    ptr = (int *) calloc(5, sizeof(int));
 
-//     printf("Enter 5 Numbers");
-//     for (int i = 0; i <5; i++)
-//     {
-//         scanf("%d" , &ptr[i]);
+    printf("Enter 5 Numbers");
+    for (int i = 0; i <5; i++)
+    {
+        scanf("%d" , &ptr[i]);
         
-//     }
+    }
 
-//     ptr =   realloc(ptr ,8); 
-//     printf("Enter 8  Numbers : ");
-//     for(int i = 0 ; i< 8 ; i++){
-//         scanf("%d" , &ptr[i]);
-//     } 
+    ptr =   realloc(ptr ,8); 
+    printf("Enter 8  Numbers : ");
+    for(int i = 0 ; i< 8 ; i++){
+        scanf("%d" , &ptr[i]);
+    } 
     
-//     // print
-//     for (int i = 0; i < 8; i++)
-//     {
-//        printf("Number %d ,is  %d\n" , i , ptr[i]);
-//     }
+    // print
+    for (int i = 0; i < 8; i++)
+    {
+       printf("Number %d ,is  %d\n" , i , ptr[i]);
+    }
     
-//     return 0;
-// }
+    return 0;
+}
 
 // 👉👉  🔹🔹  Question  5️⃣   create an array  of size  (using calloc ) & enter  its value  from the user 
     
 
-// #include <stdio.h>
-// #include <stdlib.h>
-// int  main(){
-//     int *ptr;
-//     ptr = (int *) calloc(5, sizeof(int));
+#include <stdio.h>
+#include <stdlib.h>
+int  main(){
+    int *ptr;
+    ptr = (int *) calloc(5, sizeof(int));
 
-//     printf("Enter 5 Numbers");
-//     for (int i = 0; i <5; i++)
-//     {
-//         scanf("%d" , &ptr[i]);
+    printf("Enter 5 Numbers");
+    for (int i = 0; i <5; i++)
+    {
+        scanf("%d" , &ptr[i]);
         
-//     }
+    }
 
    
     
-//     // print
-//     for (int i = 0; i < 5; i++)
-//     {
-//        printf("Number %d ,is  %d\n" , i , ptr[i]);
-//     }
+    // print
+    for (int i = 0; i < 5; i++)
+    {
+       printf("Number %d ,is  %d\n" , i , ptr[i]);
+    }
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 
@@ -144,7 +144,7 @@ int main(){
    printf("Even number is : %d\n " , ptr[i] );
     }
 
-//  free(ptr);
+ free(ptr);
     
     return 0;
 }
